@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class CalcularNota extends AppCompatActivity {
+public class  CalcularNota extends AppCompatActivity {
 
     private EditText nota1d, nota2d, nota3d;
     private EditText nota1s, nota2s, nota3s;
@@ -643,8 +643,7 @@ public class CalcularNota extends AppCompatActivity {
                     float n3=Float.parseFloat(t3);
 
                     if(n3<=5)
-                    {
-                        double cal=(((n1+n2)/2)*0.6)+(n3*0.4);
+                    {                        double cal=(((n1+n2)/2)*0.6)+(n3*0.4);
                         String resul3=Double.toString(cal);
                         editor.putString("resul3", resul3);
 
